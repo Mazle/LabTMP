@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_list_item_device"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="119dp"
+        app:layout_constraintGuide_begin="119dp" />
+
+    <TextView
+        android:id="@+id/name_list_item_device"
+        android:layout_width="167dp"
+        android:layout_height="16dp"
+        android:text="Device Name"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
+
+
+
+        <ImageView
+            android:id="@+id/devicePicture_list_item_device"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerInside"
+
+            app:srcCompat="@drawable/mmappa62"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_list_item_device"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/name_list_item_device"
+            android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/fNumberHeader_list_item_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fNumberHeader_list_item_device"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline_list_item_device"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/name_list_item_device"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/fNumberValue_list_item_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="999999"
+        app:layout_constraintLeft_toRightOf="@+id/fNumberHeader_list_item_device"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/name_list_item_device"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/dateOfMusterHeader_list_item_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dateOfMusterHeader_list_item_device"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline_list_item_device"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/fNumberHeader_list_item_device"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/dateOfMuster_list_item_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="27.04.2017"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/dateOfMusterHeader_list_item_device"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline_list_item_device"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/status_list_item_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/dateOfMuster_list_item_device"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline_list_item_device"
+        android:layout_marginStart="8dp" />
+
+</android.support.constraint.ConstraintLayout>

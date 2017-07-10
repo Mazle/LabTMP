@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LabTMP</string>
+    <string name="action_settings">Settings</string>
+    <string name="headerRegulatorsInDetailDevice">Ответственные лица:</string>
+    <string name="fNumberHeader_list_item_device">Зав.№: </string>
+    <string name="dateOfMusterHeader_list_item_device">Дата очередной поверки: </string>
+</resources>
