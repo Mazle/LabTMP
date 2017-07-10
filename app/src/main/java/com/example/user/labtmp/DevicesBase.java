@@ -28,7 +28,7 @@ public class DevicesBase {
 
 
 
-    public DevicesBase(Context mAppContext) {
+    private DevicesBase(Context mAppContext) {
         this.mAppContext = mAppContext;
 
 
@@ -61,8 +61,8 @@ public class DevicesBase {
     // Код для теста
 
     public static DevicesBase getDevicesBase(Context c) {
-       if (devicesBase==null)  return new DevicesBase(c.getApplicationContext());
-        else return devicesBase;
+       if (devicesBase==null)  devicesBase = new DevicesBase(c.getApplicationContext());
+         return devicesBase;
     }
 
     public ArrayList<LaboratoryDevice> getDeviceArrayList() {
