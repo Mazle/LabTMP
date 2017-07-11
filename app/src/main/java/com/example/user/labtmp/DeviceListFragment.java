@@ -45,7 +45,7 @@ public class DeviceListFragment extends ListFragment {
     public void onListItemClick(ListView l, View v, int position, long id) {
         Log.d("click", "decice_item was clicked in deviceListFragment");
         LaboratoryDevice clickedDevice = ((LaboratoryDeviceAdapter)getListAdapter()).getItem(position);
-        Intent detailIntent = new Intent(getActivity(), DetailDeviceActivity.class);
+        Intent detailIntent = new Intent(getActivity(), DetailDevicePagerActivity.class);
         detailIntent.putExtra(DetailDeviceFragment.EXTRA_DEVICE_ID,clickedDevice.getId());
         startActivity(detailIntent);
     }
