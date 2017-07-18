@@ -61,10 +61,10 @@ public class DeviceListFragment extends ListFragment {
         Log.d("end", " DeviceListFragment");
     }
 // пока не работает.
-    private ViewGroup setNeededHeightOfInclude (ViewGroup container){
+   /* private ViewGroup setNeededHeightOfInclude (ViewGroup container){
         container.setTop(getActivity().findViewById(R.id.toolBarContainer).getHeight());
         return container;
-    }
+    } */
 
     private class LaboratoryDeviceAdapter extends ArrayAdapter<LaboratoryDevice> {
 
